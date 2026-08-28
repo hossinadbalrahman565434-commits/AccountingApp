@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+    
+    <!-- شريط العنوان -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dashboard"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:background="@color/primary"
+        android:padding="16dp"/>
+    
+    <!-- ملخص الرصيد -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/white">
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/income"
+                android:textColor="@color/income_green"/>
+            
+            <TextView
+                android:id="@+id/totalIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="18sp"
+                android:textColor="@color/income_green"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expenses"
+                android:textColor="@color/expense_red"/>
+            
+            <TextView
+                android:id="@+id/totalExpenses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="18sp"
+                android:textColor="@color/expense_red"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!-- قائمة المعاملات -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    <!-- زر إضافة معاملة -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        android:backgroundTint="@color/accent"/>
+    
+</LinearLayout>
