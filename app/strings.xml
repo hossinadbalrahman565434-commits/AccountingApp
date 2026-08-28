@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">المحاسبة</string>
+    <string name="dashboard">لوحة التحكم</string>
+    <string name="transactions">المعاملات</string>
+    <string name="add_transaction">إضافة معاملة</string>
+    <string name="reports">التقارير</string>
+    <string name="settings">الإعدادات</string>
+    <string name="income">الإيرادات</string>
+    <string name="expenses">المصروفات</string>
+    <string name="balance">الرصيد</string>
+    <string name="date">التاريخ</string>
+    <string name="amount">المبلغ</string>
+    <string name="description">الوصف</string>
+    <string name="category">الفئة</string>
+    <string name="save">حفظ</string>
+    <string name="cancel">إلغاء</string>
+    <string name="delete">حذف</string>
+    <string name="edit">تعديل</string>
+    <string name="total_income">إجمالي الإيرادات</string>
+    <string name="total_expenses">إجمالي المصروفات</string>
+    <string name="net_balance">صافي الرصيد</string>
+</resources>
